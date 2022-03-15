@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RsParams" value="name:param_id;datatype:int,name:retenu;datatype:real,name:Exercice;datatype:string,name:Taux;datatype:real" />
+</info>

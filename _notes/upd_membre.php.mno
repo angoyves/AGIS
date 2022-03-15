@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsMembres" value="name:commissions_commission_id;datatype:int,name:fonctions_fonction_id;datatype:int,name:personnes_personne_id;datatype:int,name:montant;datatype:string,name:checboxName;datatype:string,name:position;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:user_id;datatype:int" />
+</info>

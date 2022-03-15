@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsLocalite" value="name:localite_id;datatype:int,name:localite_lib;datatype:string,name:display;datatype:string" />
+	<infoitem key="UD_rsUpdCommissions" value="name:commission_id;datatype:int,name:localite_id;datatype:int,name:type_commission_id;datatype:int,name:nature_id;datatype:int,name:structure_id;datatype:int,name:region_id;datatype:int,name:user_id;datatype:int,name:commission_lib;datatype:string,name:commission_parent;datatype:int,name:montant_cumul;datatype:string,name:nombre_offre;datatype:string,name:membre_insert;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:display;datatype:string" />
+	<infoitem key="UD_rsTypeCommission" value="name:type_commission_id;datatype:int,name:type_commission_lib;datatype:string" />
+	<infoitem key="UD_rsNature" value="name:nature_id;datatype:int,name:lib_nature;datatype:string" />
+	<infoitem key="UD_rsCommissions" value="name:commission_id;datatype:int,name:commission_lib;datatype:string,name:region_id;datatype:int" />
+	<infoitem key="UD_rsMenu" value="name:menu_id;datatype:int,name:menu_lib;datatype:string,name:user_groupe_id;datatype:int,name:lien;datatype:string,name:image;datatype:string,name:menu_description;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime" />
+	<infoitem key="UD_rsSousMenu" value="name:sous_menu_id;datatype:int,name:sous_menu_lib;datatype:string,name:sous_menu_description;datatype:string,name:sous_menu_lien;datatype:string,name:image;datatype:string,name:position;datatype:string,name:action;datatype:string,name:menu_id;datatype:int,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:display;datatype:string" />
+	<infoitem key="UD_rsRegions" value="name:region_id;datatype:int,name:region_lib;datatype:string,name:display;datatype:string" />
+</info>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsMenu" value="name:menu_id;datatype:int,name:menu_lib;datatype:string,name:lien;datatype:string,name:image;datatype:string,name:menu_description;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime" />
+	<infoitem key="UD_rsSousMenu" value="name:sous_menu_id;datatype:int,name:sous_menu_lib;datatype:string,name:sous_menu_description;datatype:string,name:sous_menu_lien;datatype:string,name:image;datatype:string,name:position;datatype:string,name:action;datatype:string,name:menu_id;datatype:int,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:display;datatype:string" />
+</info>

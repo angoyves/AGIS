@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsMenu" value="name:menu_id;datatype:int,name:menu_lib;datatype:string,name:user_groupe_id;datatype:int,name:lien;datatype:string,name:image;datatype:string,name:menu_description;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime" />
+	<infoitem key="UD_rsSousMenu" value="name:sous_menu_id;datatype:int,name:sous_menu_lib;datatype:string,name:sous_menu_description;datatype:string,name:sous_menu_lien;datatype:string,name:image;datatype:string,name:position;datatype:string,name:action;datatype:string,name:menu_id;datatype:int,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:display;datatype:string" />
+	<infoitem key="UD_rsDetailJourSession" value="name:membres_personnes_personne_id;datatype:int,name:personne_nom;datatype:string,name:personne_prenom;datatype:string,name:jour;datatype:string,name:lib_mois;datatype:string,name:annee;datatype:string" />
+	<infoitem key="UD_rsSessions_2" value="name:membres_personnes_personne_id;datatype:int,name:personne_nom;datatype:string,name:personne_prenom;datatype:string,name:membres_commissions_commission_id;datatype:int,name:membres_fonctions_fonction_id;datatype:int,name:fonction_lib;datatype:string,name:lib_nature;datatype:string,name:type_commission_lib;datatype:string,name:localite_lib;datatype:string,name:nbreJour;datatype:real" />
+	<infoitem key="UD_rsMenus" value="name:menu_id;datatype:int,name:menu_lib;datatype:string,name:user_groupe_id;datatype:int,name:lien;datatype:string,name:image;datatype:string,name:menu_description;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime" />
+	<infoitem key="UD_RsNombresSession" value="name:Nombre;datatype:int" />
+	<infoitem key="UD_rsTypeCommission" value="name:type_commission_id;datatype:int,name:type_commission_lib;datatype:string" />
+</info>

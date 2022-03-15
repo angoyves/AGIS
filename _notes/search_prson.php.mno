@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsPersonnesAdd" value="name:personne_id;datatype:int,name:personne_matricule;datatype:string,name:personne_nom;datatype:string,name:personne_prenom;datatype:string,name:add_commission;datatype:string,name:display;datatype:string,name:numero_compte;datatype:string,name:cle;datatype:string" />
+	<infoitem key="UD_rsSelFonction" value="name:fonction_id;datatype:int,name:fonction_lib;datatype:string" />
+	<infoitem key="UD_rsCommission" value="name:commission_id;datatype:int,name:lib_nature;datatype:string,name:type_commission_lib;datatype:string,name:localite_lib;datatype:string,name:commission_lib;datatype:string" />
+	<infoitem key="UD_rsMenu" value="name:menu_id;datatype:int,name:menu_lib;datatype:string,name:user_groupe_id;datatype:int,name:lien;datatype:string,name:image;datatype:string,name:menu_description;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime" />
+	<infoitem key="UD_rsSousMenu" value="name:sous_menu_id;datatype:int,name:sous_menu_lib;datatype:string,name:sous_menu_description;datatype:string,name:sous_menu_lien;datatype:string,name:image;datatype:string,name:position;datatype:string,name:action;datatype:string,name:menu_id;datatype:int,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:display;datatype:string" />
+	<infoitem key="UD_rsSelStructure" value="name:structure_id;datatype:int,name:structure_lib;datatype:string,name:code_structure;datatype:string" />
+	<infoitem key="UD_rsPersonnes" value="name:personne_id;datatype:int,name:agence_cle;datatype:string,name:banque_code;datatype:string,name:agence_code;datatype:string,name:numero_compte;datatype:string,name:cle;datatype:string,name:personne_matricule;datatype:string,name:personne_nom;datatype:string,name:personne_prenom;datatype:string,name:add_commission;datatype:string,name:display;datatype:string" />
+</info>

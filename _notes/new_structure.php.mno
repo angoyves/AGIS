@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsTypeStructure" value="name:type_structure_id;datatype:int,name:type_structure_lib;datatype:string" />
+	<infoitem key="UD_rsLocalite" value="name:localite_id;datatype:int,name:localite_lib;datatype:string" />
+	<infoitem key="UD_rsStructures" value="name:structure_id;datatype:int,name:structure_lib;datatype:string,name:type_structure_id;datatype:int,name:localite_id;datatype:int,name:date_creation;datatype:datetime,name:display;datatype:string" />
+</info>

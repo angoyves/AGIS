@@ -1,0 +1,110 @@
+<?php require_once('../Connections/MyFileConnect.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+mysql_select_db($database_MyFileConnect, $MyFileConnect);
+$query_rsMenu = "SELECT * FROM menus WHERE display = '1' ORDER BY menu_id ASC";
+$rsMenu = mysql_query($query_rsMenu, $MyFileConnect) or die(mysql_error());
+$row_rsMenu = mysql_fetch_assoc($rsMenu);
+$totalRows_rsMenu = mysql_num_rows($rsMenu);
+
+$colname_rsSousMenu = "-1";
+if (isset($_GET['menuID'])) {
+  $colname_rsSousMenu = $_GET['menuID'];
+}
+mysql_select_db($database_MyFileConnect, $MyFileConnect);
+$query_rsSousMenu = sprintf("SELECT * FROM sous_menus WHERE menu_id = %s AND display = '1' ORDER BY position ASC", GetSQLValueString($colname_rsSousMenu, "int"));
+$rsSousMenu = mysql_query($query_rsSousMenu, $MyFileConnect) or die(mysql_error());
+$row_rsSousMenu = mysql_fetch_assoc($rsSousMenu);
+$totalRows_rsSousMenu = mysql_num_rows($rsSousMenu);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>APPLICATION DE GESTION DES INDEMNITES DE SESSION</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/file.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="0">
+<tr>
+    <td colspan="3"><!-- TemplateBeginEditable name="EditHeader" -->EditHeader<!-- TemplateEndEditable --></td>
+  </tr>
+  <tr>
+    <td width="14%">&nbsp;</td>
+    <td width="86%"><table width="100%" border="1" align="center" class="std">
+      <tr>
+        <?php do { ?>
+        <th valign="middle"><a href="<?php echo htmlentities($row_rsMenu['lien']); ?>"><img src="../img/<?php echo $row_rsMenu['image']; ?>" width="16" height="16" /><?php echo htmlentities($row_rsMenu['menu_lib']); ?></a>&nbsp; </th>
+        <?php } while ($row_rsMenu = mysql_fetch_assoc($rsMenu)); ?>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><?php if ($totalRows_rsSousMenu > 0) { // Show if recordset not empty ?>
+  <table width="30%" border="1" class="std">
+    <tr>
+      <th>Sous Menus</th>
+    </tr>
+    <?php do { ?>
+      <tr>
+        <td nowrap="nowrap"><a href="<?php echo $row_rsSousMenu['sous_menu_lien']; ?>?menuID=<?php echo $_GET['menuID']; ?>&&action=<?php echo $row_rsSousMenu['action']; ?>"><img src="../img/<?php echo $row_rsSousMenu['image']; ?>" width="16" height="16" align="middle" /><?php echo htmlentities($row_rsSousMenu['sous_menu_lib']); ?></a>&nbsp; </td>
+      </tr>
+      <?php } while ($row_rsSousMenu = mysql_fetch_assoc($rsSousMenu)); ?>
+  </table>
+  <?php } // Show if recordset not empty ?></td>
+    <td colspan="2"><!-- TemplateBeginEditable name="EditBody" -->EditBody<!-- TemplateEndEditable --></td>
+  </tr>
+<tr>
+    <td colspan="3"><table border="0" align="center">
+      <tr>
+        <td><a href="#" target="print_view"><img src="http://localhost/phpmyadmin/themes/pmahomme/img/b_print.png" title="Version imprimable" alt="Version imprimable" width="16" height="16" /> Version imprimable</a></td>
+        <td><a href="#" target="print_view"><img src="http://localhost/phpmyadmin/themes/pmahomme/img/b_print.png" title="Version imprimable (avec textes complets)" alt="Version imprimable (avec textes complets)" width="16" height="16" /> Version imprimable </a><a href="#"><img src="http://localhost/phpmyadmin/themes/pmahomme/img/b_tblexport.png" title="Exporter" alt="Exporter" width="16" height="16" /> Exporter </a><a href="http://localhost/phpmyadmin/sql.php?db=fichier_db85&amp;table=personnes&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60personnes%60&amp;display_text=F&amp;token=62ade055dc15cdff8c9aedaf7fb5a081" target="print_view">textes complets)</a></td>
+        <td><a href="#"><img src="http://localhost/phpmyadmin/themes/pmahomme/img/b_chart.png" title="Afficher le graphique" alt="Afficher le graphique" width="16" height="16" /> Afficher le graphique</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
+<?php
+mysql_free_result($rsMenu);
+
+mysql_free_result($rsSousMenu);
+?>

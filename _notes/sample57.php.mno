@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsSelYear" value="name:lib_annee;datatype:string" />
+	<infoitem key="UD_rsMois" value="name:mois_id;datatype:string,name:lib_mois;datatype:string,name:nbre_jour;datatype:string" />
+	<infoitem key="UD_rsJourMois" value="name:mois_id;datatype:string,name:lib_mois;datatype:string,name:nbre_jour;datatype:string" />
+	<infoitem key="UD_rsCommissions" value="name:commission_id;datatype:int,name:commission_lib;datatype:string,name:lib_nature;datatype:string,name:type_commission_lib;datatype:string,name:localite_lib;datatype:string" />
+	<infoitem key="UD_rsSousCommission" value="name:commission_id;datatype:int,name:montant_cumul;datatype:string,name:nombre_offre;datatype:string" />
+	<infoitem key="UD_rsSessionRepresentant" value="name:commission_id;datatype:int,name:personne_id;datatype:int,name:personne_nom;datatype:string,name:fonction_lib;datatype:string,name:code_structure;datatype:string,name:nombre_jour;datatype:int,name:jour;datatype:string,name:mois;datatype:string,name:annee;datatype:string,name:montant;datatype:string,name:total;datatype:real" />
+	<infoitem key="UD_rsDossiers_traites" value="name:dossiers_commission_id;datatype:int,name:dossiers_dossier_id;datatype:int,name:jour;datatype:string,name:mois;datatype:string,name:annee;datatype:string,name:nombre_dossier;datatype:string,name:user_id;datatype:int,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime" />
+	<infoitem key="UD_rsMenus" value="name:menu_id;datatype:int,name:menu_lib;datatype:string,name:user_groupe_id;datatype:int,name:lien;datatype:string,name:image;datatype:string,name:menu_description;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime" />
+	<infoitem key="UD_rsSousMenu" value="name:sous_menu_id;datatype:int,name:sous_menu_lib;datatype:string,name:sous_menu_description;datatype:string,name:sous_menu_lien;datatype:string,name:image;datatype:string,name:position;datatype:string,name:action;datatype:string,name:menu_id;datatype:int,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:display;datatype:string" />
+	<infoitem key="UD_rsMembres" value="name:commissions_commission_id;datatype:int,name:fonctions_fonction_id;datatype:int,name:personnes_personne_id;datatype:int,name:montant;datatype:string,name:checboxName;datatype:string,name:position;datatype:string,name:display;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:user_id;datatype:int" />
+</info>

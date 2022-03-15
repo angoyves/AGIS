@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsDomaines" value="name:domaineCompetenceID;datatype:int,name:domaineName;datatype:string,name:display;datatype:string,name:TypeDomaines_typeDomaineID;datatype:int" />
+</info>

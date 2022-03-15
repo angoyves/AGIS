@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsJourMois" value="name:mois_id;datatype:string,name:lib_mois;datatype:string,name:nbre_jour;datatype:string" />
+	<infoitem key="UD_rsCommissions" value="name:commission_id;datatype:int,name:commission_lib;datatype:string,name:lib_nature;datatype:string,name:type_commission_lib;datatype:string,name:localite_lib;datatype:string" />
+	<infoitem key="UD_rsMembres" value="name:commission_id;datatype:int,name:commissions_commission_id;datatype:int,name:personne_nom;datatype:string,name:personne_id;datatype:int,name:personne_prenom;datatype:string,name:fonction_lib;datatype:string,name:checboxName;datatype:string,name:position;datatype:string,name:fonctions_fonction_id;datatype:int" />
+</info>

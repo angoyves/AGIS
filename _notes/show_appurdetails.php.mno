@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_DetailRS1" value="name:appurement_id;datatype:int,name:num_virement;datatype:int,name:rib_beneficiaire;datatype:string,name:nom_beneficiaire;datatype:string,name:ref_dossier;datatype:string,name:motif;datatype:string,name:montant;datatype:int,name:periode_debut;datatype:string,name:periode_fin;datatype:string,name:annee;datatype:string,name:display;datatype:string" />
+	<infoitem key="UD_LiveData_params" value="1" />
+	<infoitem key="UD_LiveData_param0" value="recordID=1" />
+	<infoitem key="UD_DetailRS2" value="name:appurement_id;datatype:int,name:num_virement;datatype:int,name:rib_beneficiaire;datatype:string,name:nom_beneficiaire;datatype:string,name:ref_dossier;datatype:string,name:motif;datatype:string,name:montant;datatype:int,name:periode_debut;datatype:string,name:periode_fin;datatype:string,name:annee;datatype:string,name:display;datatype:string" />
+</info>

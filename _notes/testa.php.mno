@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsSelSessions" value="name:membres_commissions_commission_id;datatype:int,name:membres_personnes_personne_id;datatype:int,name:membres_fonctions_fonction_id;datatype:int,name:dossiers_dossier_id;datatype:int,name:nombre_dossier;datatype:int,name:Nombre_jour;datatype:int,name:etat_appur;datatype:string,name:jour;datatype:string,name:mois;datatype:string,name:annee;datatype:string,name:dateCreation;datatype:datetime,name:dateUpdate;datatype:datetime,name:display;datatype:string,name:user_id;datatype:int,name:etat_validation;datatype:string,name:userValidate;datatype:int,name:userControlate;datatype:int" />
+</info>

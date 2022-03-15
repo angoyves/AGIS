@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsStructure" value="name:structure_id;datatype:int" />
+	<infoitem key="UD_rsPersonnes" value="name:personne_id;datatype:int,name:structure_id;datatype:int" />
+</info>
